@@ -1,0 +1,129 @@
+/* media querys */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Styles for body */
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:bisque;
+    color: rgb(11, 11, 11)
+}
+
+/* Styles the navbar container*/
+.nav-bar {
+    background-color:rgb(218, 165, 32);
+    padding: 10px;
+    border-bottom: 4px solid gray;
+}
+
+/* Styles the ul text in the navbar*/
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    font-size: 25px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+/*Styles for the search bar */
+.search-bar {
+    float: right;
+    width: 50%;
+    height: 20%;
+    padding: 5px 10px;
+    padding-left: 10px;
+    margin: 10px;
+    border: 5px solid #989090;
+    border-radius: 33px;
+}
+
+.search-bar form {
+    display: flex;           /* arrange children in a row */
+    gap: 10px;               /* space between input and button */
+    align-items: center;     /* vertically center them */
+  }
+  
+  .search-bar input[type="text"] {
+    flex: 1;                 /* input takes remaining space */
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+/* Styles for Title and Main Image */
+.title-image {
+    position: relative; /* allows absolute positioning inside */
+    display: inline-block;
+}
+
+.main-image {
+    display: block;
+    width: 93.75rem; /* makes image responsive */
+    height: 56.25rem;
+}
+
+.title {
+  position: absolute;
+  top: 20px;       /* distance from top of image */
+  left: 20px;      /* distance from left of image */
+  color: goldenrod;   /* text color */
+  font-size: 2.5rem;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  padding: 2rem;
+  margin-left: 35rem;
+  margin-top: 9rem;
+  border: 1.5px solid goldenrod;
+  border-radius: 100px;
+}
+
+/* Styles for destinations Options Section */
+.destinations h2 {
+    text-align: center;
+}
+
+.destinations ul li {
+    display: inline-block;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+    padding: 4rem;
+    border: 2px solid goldenrod;
+
+}
+
+/* Styles for summary section */ 
+.summary p {
+    grid-column: 1 / -1;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 20px; /* space between images */
+    padding: 20px;
+  }
+  
+  .summary img {
+    width: 100%;   /* make images fill their grid cell */
+    height: 31.25rem;  /* forces height of images */
+    object-fit: cover; /* crops instead of streaching */
+    border-radius: 8px;
+    object-fit: cover; /* makes sure images don't stretch weirdly */
+  }
+
+  /* Styles for footer secton */ 
+  footer p {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 30px;
+  }
